@@ -1,0 +1,85 @@
+.Header {
+  background-color: var(--header-bgColor);
+  color: #fff;
+  padding: 0 20px;
+  overflow: hidden;
+  white-space: hidden;
+  box-shadow: var(--shadow);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header .input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Header .input-group input:focus + svg {
+  fill: dodgerBlue;
+}
+
+.Header .input-group .inputWithIcon {
+  position: relative;
+}
+
+.Header .input-group svg {
+  position: absolute;
+  right: 10px;
+}
+
+.Header .input-group .input-localizar-atividade {
+  margin: 8px 0;
+  padding: 4px 6px 4px 8px;
+  height: 30px;
+
+  background-color: rgb(193, 190, 234);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  border: none;
+}
+
+.Header .input-group .input-localizar-atividade::placeholder {
+  color: #fff;
+}
+
+.Header .input-group .input-localizar-atividade:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.Header div#container-notificacao {
+  border-radius: 50%;
+  background-color: var(--header-bgColor);
+}
+
+.Header div#container-notificacao :hover,:focus {
+  border-radius: 50%;
+  transition: background 200ms ease-in-out, transform 150ms ease;
+  box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.09);
+}
+
+.Header div#container-notificacao > button.botao-notificacao {
+  margin: 0px;
+  padding: 8px;
+
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+
+  color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.Header div#container-notificacao button.botao-notificacao:focus {
+  outline: none;
+}
+
+.Header div#container-notificacao  button.botao-notificacao:active {
+  transform: scale(80%);
+}
